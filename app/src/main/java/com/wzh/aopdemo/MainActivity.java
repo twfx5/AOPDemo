@@ -16,9 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     @NetWork
     public void click(View view) {
-        if (NetWorkUtils.isNetWorkAvailable(this)) {
-            Intent intent = new Intent(this, TestActivity.class);
-            startActivity(intent);
-        }
+        Intent intent = new Intent(this, TestActivity.class);
+        startActivity(intent);
     }
 }
